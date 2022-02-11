@@ -50,9 +50,7 @@ a:hover:not(:first-child){
     align-items: center;
     justify-content: center;
     scroll-snap-align: end;
-}
-.section{
-   background-image: url('TheLastFighter.gif');
+    background-image: url('TheLastFighter.gif');
     background-size: 100vh;
 }
 .item-1{
@@ -62,7 +60,7 @@ a:hover:not(:first-child){
     font-size: 50px;
     position: relative;
 }
-.item-1::before{
+.item-1:before{
     content: "TheLastFighter";
     text-align: center;
     position: absolute;
@@ -83,14 +81,138 @@ a:hover:not(:first-child){
     text-align: center;
     
 }
+.item-2{
+    font-size: 50px;
+    position: relative;
+    border: #ffe500 solid 5px;
+    height: 80%;
+    width: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-2::before{
+    content: "Assets";
+    text-align: center;
+    position: absolute;
+    top:-30px;
+    left: 50%;
+    width: 600px;
+    transform: translateX(-50%);
+    background-color: #ffe500;
+    font-weight: bold;
+}
+.item-2::after{
+    content: "All 3D models are created in a Blender";
+    text-align: center;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 600px;
+    transform: translateX(-50%);
+    background-color: #ffe500;
+    font-weight: bold;
+    font-size: 25px;
+}
+.slider{
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    border: #ffe500 solid 5px;
+}
+.slider ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    list-style:none;
+}
+ul li{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
 
+a.control_prev, a.control_next {
+    position: absolute;
+    top: 50%;
+    left: -3%;
+    z-index: 999;
+    display: flex;
+    width: 5%;
+    height: 15%;
+    transform: translateY(-50%);
+    background: #ffe500;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+   justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+}
+a.control_next{
+    left: 98%;
+}
+a.control_prev:hover, a.control_next:hover{
+    background:#262626;
+    color:#ffe500;
+}
 
+.item-3{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-color: #ffe500;
+    display:inline-flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.item-3::before{
+    content: "Contacts";
+    text-align: center;
+    position: absolute;
+    top:-20px;
+    left: 50%;
+    width: 600px;
+    transform: translateX(-50%);
+    background-color: black;
+    font-weight: bold;
+    color:#ffe500;
+    font-size: 40px;
+}
+.item-3 .con{
+    width:20%;
+    height: 50%;
+    border: #262626 solid 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    writing-mode: vertical-rl;
+    text-align: center;
+   
 
-
-
-
-
-
+}
+.con a{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    font-size: 30px;
+    color: inherit;
+    text-decoration: none;
+   font-weight: bold;
+}
+.con a:hover{
+    background-color: black;
+    color:#ffe500;
+}
 
 
 
@@ -116,6 +238,7 @@ a:hover:not(:first-child){
       
     }
 }
+
 
 
 
